@@ -1,283 +1,249 @@
-DUE,STATUS,TYPE,TOPIC,CLASS,,,
-1/12/22,Complete,Reading,6.2 Area Between Curves,Math 172,,,Cpt_S 122 Data Structures C/C++
-1/12/22,Complete,Reading,DD CPP 1.1-1.4,Cpt_S 122,,,Math 172 Calculus II
-1/12/22,Complete,Reading,"Syllabus, 1.1, 1.1",Math 216,,,Math 216 Discrete Structures
-1/13/22,Complete,Quiz,Quiz 1,Math 172,,,Phys 201/211 Physics for Scientists and Engineers I
-1/14/22,Complete,Reading,6.3a Volumes by Slicing,Math 172,,,
-1/14/22,Complete,Reading,"HK 13.1-13.3, DDC 12.1-12.2",Cpt_S 122,,,
-1/14/22,Complete,Reading,1 Concepts of Motion,Phys 201,,,
-1/14/22,Complete,Reading,"1.3, 1.3",Math 216,,,
-1/18/22,Complete,Lab,Motion along straight line,Phys 211,,,
-1/18/22,Complete,Homework,MML 04,Math 172,,,
-1/19/22,Complete,Reading,6.3b More on Slicing,Math 172,,,
-1/19/22,Complete,Reading,"Opt: HK 13.4, DD C 12.3",Cpt_S 122,,,
-1/19/22,Complete,Reading,1 Kinematics in One Dimension,Phys 201,,,
-1/19/22,Complete,Reading,1.1,Math 216,,,
-1/19/22,Complete,Homework,HW 1,Math 216,,,
-1/20/22,Complete,Homework,MML 06.1,Math 172,,,
-1/21/22,Complete,Reading,6.4 Volumes by Shells,Math 172,,,
-1/21/22,Complete,Reading,1 Kinematics in One Dimension,Phys 201,,,
-1/21/22,Complete,Reading,1.2,Math 216,,,
-1/21/22,Complete,Homework,Assignment 1,Phys 201,,,
-1/21/22,Complete,Homework,Written 1,Math 172,,,
-1/23/22,Complete,Homework,MML 06.2,Math 172,,,
-1/23/22,Complete,Homework,Assignment 2,Phys 201,,,
-1/24/22,Complete,Reading,6.5 Arc Length,Math 172,,,
-1/24/22,Complete,Reading,2 Vectors,Phys 201,,,
-1/24/22,Complete,Reading,1.3,Math 216,,,
-1/25/22,Complete,Lab,Free Fall,Phys 211,,,
-1/25/22,Complete,Homework,Lab Report 0,Phys 211,,,
-1/25/22,Complete,Homework,MML 06.3,Math 172,,,
-1/26/22,Complete,Reading,7.1 Exponentials and Logs,Math 172,,,
-1/26/22,Complete,Homework,PA 1,Cpt_S 122,,,
-1/26/22,Complete,Quiz,Quiz 1,Cpt_S 122,,,
-1/26/22,Complete,Reading,3 Kinematics in Two Dimensions,Phys 201,,,
-1/26/22,Complete,Reading,"3.1, 3.1",Math 216,,,
-1/26/22,Complete,Homework,Assignment 3,Phys 201,,,
-1/27/22,Complete,Quiz,Quiz 1,Math 172,,,
-1/27/22,Complete,Homework,MML 06.4,Math 172,,,
-1/28/22,Complete,Reading,7.3 Hyperbolic Function,Math 172,,,
-1/28/22,Complete,Reading,"DD CPP 6.11, Opt: HK 13.5, DD C 12.4",Cpt_S 122,,,
-1/28/22,Complete,Reading,3 Kinematics in Two Dimensions,Phys 201,,,
-1/28/22,Complete,Reading,2.3,Math 216,,,
-1/28/22,Complete,Homework,Written 1,Math 172,,,
-1/28/22,Complete,Homework,Assignment 4,Phys 201,,,
-1/30/22,Complete,Homework,Assignment 5,Phys 201,,,
-1/30/22,Complete,Homework,MML 07.0,Math 172,,,
-1/31/22,Complete,Reading,8.1 Basic Integration,Math 172,,,
-1/31/22,Complete,Reading,4 Force,Phys 201,,,
-1/31/22,Complete,Reading,2.4,Math 216,,,
-1/31/22,Complete,Homework,HW 1,Math 216,,,
-2/1/22,Complete,Lab,Projectile Motion,Phys 211,,,
-2/1/22,Complete,Homework,Lab Report 1,Phys 211,,,
-2/1/22,Complete,Homework,MML 07.2,Math 172,,,
-2/2/22,Complete,Quiz,Quiz 1,Cpt_S 122,,,
-2/2/22,Complete,Homework,PA 1,Cpt_S 122,,,
-2/2/22,Complete,Reading,4 Force,Phys 201,,,
-2/2/22,Complete,Reading,3.1,Math 216,,,
-2/2/22,Complete,Homework,Assignment 6,Phys 201,,,
-2/3/22,Complete,Exam,Exam 1 8:30 PM,Math 172,,,
-2/4/22,Complete,Reading,8.2 Integration by Parts,Math 172,,,
-2/4/22,Complete,Reading,5 Dynamics I: Linear Motion,Phys 201,,,
-2/4/22,Complete,Reading,3.2,Math 216,,,
-2/4/22,Complete,Homework,Assignment 7,Phys 201,,,
-2/4/22,Complete,Exam,Exam I,Cpt_S 122,,,
-2/6/22,Complete,Homework,MML 08.0,Math 172,,,
-2/6/22,Complete,Homework,Assignment 8,Phys 201,,,
-2/7/22,Complete,Reading,8.3 Trig Integrals,Math 172,,,
-2/7/22,Complete,Reading,"DD CPP 1.6-1.16, 1",Cpt_S 122,,,
-2/7/22,Complete,Reading,5 Dynamics I: Linear Motion,Phys 201,,,
-2/7/22,Complete,Reading,3.4,Math 216,,,
-2/7/22,Complete,Homework,HW 2,Math 216,,,
-2/8/22,Complete,Lab,Newton's Second Law,Phys 201,,,
-2/8/22,Complete,Homework,Lab Report 2,Phys 211,,,
-2/8/22,Complete,Homework,MML 08.1,Math 172,,,
-2/9/22,Complete,Homework,Written 2,Math 172,,,
-2/9/22,Complete,Reading,8.4a Trig Substitution,Math 172,,,
-2/9/22,Complete,Reading,"DD CPP 3.1-3.4, 6.15, 6.16, 6.18, 6.19",Cpt_S 122,,,
-2/9/22,Complete,Reading,5 Dynamics I: Linear Motion,Phys 201,,,
-2/9/22,Complete,Reading,3.5,Math 216,,,
-2/9/22,Complete,Homework,Assignment 9,Phys 201,,,
-2/10/22,Complete,Homework,MML 08.2,Math 172,,,
-2/11/22,Complete,Reading,8.4b More Trig Substitution,Math 172,,,
-2/11/22,Complete,Reading,DD CPP 3.5-3.8,Cpt_S 122,,,
-2/11/22,Complete,Reading,6 Newton's Third Law,Phys 201,,,
-2/11/22,Complete,Exam,Midterm 1,Math 216,,,
-2/11/22,Complete,Homework,Assignment 10,Phys 201,,,
-2/12/22,Complete,Homework,Written 3,Math 172,,,
-2/13/22,Complete,Homework,Assignment 11,Phys 201,,,
-2/14/22,,Reading,8.5 Partial Fractions,Math 172,,,
-2/14/22,Complete,Reading,"DD CPP 6.12, 6.17, 6.18",Cpt_S 122,,,
-2/14/22,Complete,Homework,PA 2,Cpt_S 122,,,
-2/14/22,,Reading,6 Newton's Third Law,Phys 201,,,
-2/14/22,,Reading,"4.7, 4.8",Math 216,,,
-2/15/22,Complete,Lab,Simple Pendulum,Phys 211,,,
-2/15/22,Complete,Homework,Lab Report 3,Phys 211,,,
-2/15/22,100%,Homework,MML 08.3,Math 172,,,
-2/16/22,,Reading,8.9a Improper Integrals,Math 172,,,
-2/16/22,,Reading,"Opt: HK 13.6, DD C 12.5",Cpt_S 122,,,
-2/16/22,Complete,Quiz,Quiz 2,Cpt_S 122,,,
-2/16/22,,Reading,6 Newton's Third Law,Phys 201,,,
-2/16/22,,Reading,"4.8, 4.10, 5.0",Math 216,,,
-2/16/22,Complete,Homework,Numerical Integration Lab,Math 172,,,
-2/18/22,Complete,Homework,HW 3,Math 216,,,
-2/18/22,,Reading,8.9 Improper Integrals,Math 172,,,
-2/18/22,,Reading,"Req: DD CPP 13.1-13.9, 7.1-7.5, 7.10, 14.1-14.4",Cpt_S 122,,,
-2/18/22,Complete,Exam,Exam I,Phys 201,,,
-2/18/22,Complete,Reading,4.2,Math 216,,,
-2/18/22,Complete,Homework,Written 4,Math 172,,,
-2/19/22,Complete,Homework,Assignment 12,Phys 201,,,
-2/20/22,,Homework,MML 08.4,Math 172,,,
-2/20/22,,Homework,Assignment 13,Phys 201,,,
-2/22/22,,Lab,"Newton's Third Law, Impulse and Momentum",Phys 211,,,
-2/22/22,,Homework,Lab Report 4,Phys 211,,,
-2/23/22,,Reading,10.1 Seq. and Series,Math 172,,,
-2/23/22,,Reading,DD CPP 10.1-10.2,Cpt_S 122,,,
-2/23/22,,Quiz,Quiz 3,Cpt_S 122,,,
-2/23/22,,Reading,7 Dynamics II: Planar Motion,Phys 201,,,
-2/23/22,,Reading,"5.3, 5.3",Math 216,,,
-2/23/22,,Homework,HW 4,Math 216,,,
-2/23/22,,Homework,Assignment 14,Phys 201,,,
-2/24/22,,Homework,MML 08.8,Math 172,,,
-2/25/22,,Reading,10.2 Sequences,Math 172,,,
-2/25/22,,Reading,"DD CPP 8.6-8.8, 9.1-9.15, 10.4-10.6",Cpt_S 122,,,
-2/25/22,,Reading,7 Dynamics II: Planar Motion,Phys 201,,,
-2/25/22,,Reading,4.7,Math 216,,,
-2/25/22,,Homework,Written 5,Math 172,,,
-2/28/22,,Reading,10.3 Geometric Sums,Math 172,,,
-2/28/22,,Reading,"DD CPP 10.8-10.15, 21.1-21.6",Cpt_S 122,,,
-2/28/22,,Quiz,Quiz 4,Cpt_S 122,,,
-2/28/22,,Reading,10 Impulse and Momentum,Phys 201,,,
-2/28/22,,Reading,5.1,Math 216,,,
-2/28/22,,Homework,HW 5,Math 216,,,
-3/1/22,,Lab,Work and Energy,Phys 211,,,
-3/1/22,,Homework,Lab Report 5,Phys 211,,,
-3/2/22,,Reading,DD CPP 18.1-18.6,Cpt_S 122,,,
-3/2/22,,Homework,PA 3,Cpt_S 122,,,
-3/2/22,,Reading,10 Impulse and Momentum,Phys 201,,,
-3/2/22,,Reading,"6.2, 6.2",Math 216,,,
-3/3/22,,Exam,Exam 2 8:30 PM,Math 172,,,
-3/4/22,,Reading,10.4a Divergence and Integral Tests,Math 172,,,
-3/4/22,,Reading,DD CPP 19.1-19.2,Cpt_S 122,,,
-3/4/22,,Reading,8 Work and Kinetic Energy,Phys 201,,,
-3/4/22,,Reading,"8.1, 8.1",Math 216,,,
-3/4/22,,Homework,Written 6,Math 172,,,
-3/7/22,,Reading,10.4b Divergence and Integral Tests,Math 172,,,
-3/7/22,,Reading,DD CPP 19.4-19.5,Cpt_S 122,,,
-3/7/22,,Reading,8 Work and Kinetic Energy,Phys 201,,,
-3/7/22,,Reading,7.3,Math 216,,,
-3/7/22,,Homework,HW 6,Math 216,,,
-3/8/22,,Lab,Buoyancy,Phys 211,,,
-3/8/22,,Homework,Lab Report 6,Phys 211,,,
-3/9/22,,Reading,10.5 Comparison Tests,Math 172,,,
-3/9/22,,Reading,DD CPP 19.6,Cpt_S 122,,,
-3/9/22,,Quiz,Quiz 6,Cpt_S 122,,,
-3/9/22,,Reading,9 Potential Energy,Phys 201,,,
-3/9/22,,Reading,7.5,Math 216,,,
-3/11/22,,Reading,10.6a Abs. and Cond. Convergence,Math 172,,,
-3/11/22,,Reading,"DD CPP 20.1, 20.1",Cpt_S 122,,,
-3/11/22,,Homework,PA 4,Cpt_S 122,,,
-3/11/22,,Reading,9 Potential Energy,Phys 201,,,
-3/11/22,,Reading,"9.1, 9.1",Math 216,,,
-3/11/22,,Homework,Written 7,Math 172,,,
-3/15/22,,Homework,Lab Report 7,Phys 211,,,
-3/18/22,,Homework,Written 8,Math 172,,,
-3/21/22,,Reading,10.6b Abs. and Cond. Convergence,Math 172,,,
-3/21/22,,Reading,"DD CPP 20.3, 20.3",Cpt_S 122,,,
-3/21/22,,Reading,11 Rotational Energy,Phys 201,,,
-3/21/22,,Reading,8.3,Math 216,,,
-3/21/22,,Homework,HW 7,Math 216,,,
-3/22/22,,Lab,"Rotational Dynamics (Force, Torque)",Phys 211,,,
-3/22/22,,Homework,Lab Report 8,Phys 211,,,
-3/23/22,,Reading,10.7 Ratio and Root Tests,Math 172,,,
-3/23/22,,Reading,11 Rotational Energy,Phys 201,,,
-3/23/22,,Reading,8.4,Phys 211,,,
-3/25/22,,Reading,11.1a Taylor Polynomials,Math 172,,,
-3/25/22,,Homework,PA 5,Cpt_S 122,,,
-3/25/22,,Exam,Exam II,Phys 201,,,
-3/25/22,,Exam,Midterm 2,Math 216,,,
-3/25/22,,Homework,Written 9,Math 172,,,
-3/28/22,,Reading,11.1b Taylor Polynomials,Math 172,,,
-3/28/22,,Reading,DD CPP 11.1-11.3,Cpt_S 122,,,
-3/28/22,,Reading,11 Rotational Energy,Phys 201,,,
-3/28/22,,Reading,8.5,Phys 211,,,
-3/28/22,,Homework,HW 8,Math 216,,,
-3/29/22,,Lab,Spring-Mass Oscillations,Phys 211,,,
-3/29/22,,Homework,Lab Report 9,Phys 211,,,
-3/30/22,,Reading,11.2a Power Series Properties,Math 172,,,
-3/30/22,,Reading,DD CPP 11.5-11.6,Cpt_S 122,,,
-3/30/22,,Reading,13 Fluids,Phys 201,,,
-3/30/22,,Reading,8.6,Phys 211,,,
-4/1/22,,Reading,11.2b Power Series Manipulation,Math 172,,,
-4/1/22,,Reading,13 Fluids,Phys 201,,,
-4/1/22,,Reading,8.7,Phys 211,,,
-4/1/22,,Homework,Written 10,Math 172,,,
-4/4/22,,Reading,11.3 & 4 Taylor Series,Math 172,,,
-4/4/22,,Reading,DD CPP 12.1-12.2,Cpt_S 122,,,
-4/4/22,,Reading,13 Fluids,Phys 201,,,
-4/4/22,,Reading,8.8,Phys 211,,,
-4/4/22,,Homework,HW 9,Math 216,,,
-4/5/22,,Lab,Vibrating Strings,Phys 211,,,
-4/5/22,,Homework,Lab Report 10,Phys 211,,,
-4/6/22,,Reading,12.1 Parametric Equations,Math 172,,,
-4/6/22,,Reading,DD CPP 12.4-12.6,Cpt_S 122,,,
-4/6/22,,Homework,PA 6,Cpt_S 122,,,
-4/6/22,,Quiz,Quiz 7,Cpt_S 122,,,
-4/6/22,,Reading,14 Oscillations,Phys 201,,,
-4/6/22,,Reading,8.9,Math 216,,,
-4/8/22,,Reading,12.2 Polar Coordinates,Math 172,,,
-4/8/22,,Reading,"DD CPP 12.8, 12.8",Cpt_S 122,,,
-4/8/22,,Reading,14 Oscillations,Phys 201,,,
-4/8/22,,Reading,9.1,Math 216,,,
-4/8/22,,Homework,Written 11,Math 172,,,
-4/11/22,,Reading,12.3 Calculus with Polar,Math 172,,,
-4/11/22,,Reading,15 Traveling Waves,Phys 201,,,
-4/11/22,,Reading,9.2,Math 216,,,
-4/11/22,,Homework,HW 10,Math 216,,,
-4/12/22,,Lab,Ballistic Pendulum,Phys 211,,,
-4/12/22,,Homework,Lab Report 11,Phys 211,,,
-4/13/22,,Homework,PA 7,Math 216,,,
-4/13/22,,Quiz,Quiz 8,Cpt_S 122,,,
-4/13/22,,Reading,15 Traveling Waves,Phys 201,,,
-4/13/22,,Reading,9.3,Math 216,,,
-4/14/22,,Exam,Exam 3 8:30 PM,Math 172,,,
-4/15/22,,Reading,13.1 Vectors in the plane,Math 172,,,
-4/15/22,,Reading,16 Superposition,Phys 201,,,
-4/15/22,,Reading,9.4,Math 216,,,
-4/15/22,,Homework,Written 12,Math 172,,,
-4/18/22,,Reading,13.2 Vectors in 3D,Math 172,,,
-4/18/22,,Reading,DD CPP 17.1-17.3,Cpt_S 122,,,
-4/18/22,,Reading,16 Superposition,Phys 201,,,
-4/18/22,,Reading,9.5,Math 216,,,
-4/18/22,,Homework,HW 11,Math 216,,,
-4/20/22,,Reading,13.3 Dot Product,Math 172,,,
-4/20/22,,Reading,DD CPP 17.5-17.10,Cpt_S 122,,,
-4/20/22,,Reading,17 Macroscopic Description of Matter,Phys 201,,,
-4/20/22,,Reading,9.6,Math 216,,,
-4/22/22,,Reading,13.4 Cross Product,Math 172,,,
-4/22/22,,Exam,Exam III,Phys 201,,,
-4/25/22,,Reading,13.5 Lines and Planes in Space,Math 172,,,
-4/25/22,,Reading,DD CPP 15.1-15.4,Cpt_S 122,,,
-4/25/22,,Reading,18 First Law of Thermodynamics,Phys 201,,,
-4/25/22,,Homework,HW 12,Math 216,,,
-4/27/22,,Homework,PA 8,Cpt_S 122,,,
-4/27/22,,Reading,18 First Law of Thermodynamics,Phys 201,,,
-4/29/22,,Reading,19 Micro/Macro Connection,Phys 201,,,
-5/2/22,,Exam,Final Exam 7:10PM-10 PM,Math 172,,,
-5/2/22,,Final,Final Exam 10:10AM-12:10PM,Cpt_S 122,,,
-5/2/22,,Final,Final Exam 8AM-10AM,Phys 201,,,
-5/2/22,,Final,Final Exam 8AM-10AM,Math 216,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
+DUE,STATUS,TYPE,TOPIC,CLASS
+1/12/22,Complete,Reading,6.2 Area Between Curves,Math 172
+1/12/22,Complete,Reading,DD CPP 1.1-1.4,Cpt_S 122
+1/12/22,Complete,Reading,"Syllabus, 1.1, 1.1",Math 216
+1/13/22,Complete,Quiz,Quiz 1,Math 172
+1/14/22,Complete,Reading,6.3a Volumes by Slicing,Math 172
+1/14/22,Complete,Reading,"HK 13.1-13.3, DDC 12.1-12.2",Cpt_S 122
+1/14/22,Complete,Reading,1 Concepts of Motion,Phys 201
+1/14/22,Complete,Reading,"1.3, 1.3",Math 216
+1/18/22,Complete,Lab,Motion along straight line,Phys 211
+1/18/22,Complete,Homework,MML 04,Math 172
+1/19/22,Complete,Reading,6.3b More on Slicing,Math 172
+1/19/22,Complete,Reading,"Opt: HK 13.4, DD C 12.3",Cpt_S 122
+1/19/22,Complete,Reading,1 Kinematics in One Dimension,Phys 201
+1/19/22,Complete,Reading,1.1,Math 216
+1/19/22,Complete,Homework,HW 1,Math 216
+1/20/22,Complete,Homework,MML 06.1,Math 172
+1/21/22,Complete,Reading,6.4 Volumes by Shells,Math 172
+1/21/22,Complete,Reading,1 Kinematics in One Dimension,Phys 201
+1/21/22,Complete,Reading,1.2,Math 216
+1/21/22,Complete,Homework,Assignment 1,Phys 201
+1/21/22,Complete,Homework,Written 1,Math 172
+1/23/22,Complete,Homework,MML 06.2,Math 172
+1/23/22,Complete,Homework,Assignment 2,Phys 201
+1/24/22,Complete,Reading,6.5 Arc Length,Math 172
+1/24/22,Complete,Reading,2 Vectors,Phys 201
+1/24/22,Complete,Reading,1.3,Math 216
+1/25/22,Complete,Lab,Free Fall,Phys 211
+1/25/22,Complete,Homework,Lab Report 0,Phys 211
+1/25/22,Complete,Homework,MML 06.3,Math 172
+1/26/22,Complete,Reading,7.1 Exponentials and Logs,Math 172
+1/26/22,Complete,Homework,PA 1,Cpt_S 122
+1/26/22,Complete,Quiz,Quiz 1,Cpt_S 122
+1/26/22,Complete,Reading,3 Kinematics in Two Dimensions,Phys 201
+1/26/22,Complete,Reading,"3.1, 3.1",Math 216
+1/26/22,Complete,Homework,Assignment 3,Phys 201
+1/27/22,Complete,Quiz,Quiz 1,Math 172
+1/27/22,Complete,Homework,MML 06.4,Math 172
+1/28/22,Complete,Reading,7.3 Hyperbolic Function,Math 172
+1/28/22,Complete,Reading,"DD CPP 6.11, Opt: HK 13.5, DD C 12.4",Cpt_S 122
+1/28/22,Complete,Reading,3 Kinematics in Two Dimensions,Phys 201
+1/28/22,Complete,Reading,2.3,Math 216
+1/28/22,Complete,Homework,Written 1,Math 172
+1/28/22,Complete,Homework,Assignment 4,Phys 201
+1/30/22,Complete,Homework,Assignment 5,Phys 201
+1/30/22,Complete,Homework,MML 07.0,Math 172
+1/31/22,Complete,Reading,8.1 Basic Integration,Math 172
+1/31/22,Complete,Reading,4 Force,Phys 201
+1/31/22,Complete,Reading,2.4,Math 216
+1/31/22,Complete,Homework,HW 1,Math 216
+2/1/22,Complete,Lab,Projectile Motion,Phys 211
+2/1/22,Complete,Homework,Lab Report 1,Phys 211
+2/1/22,Complete,Homework,MML 07.2,Math 172
+2/2/22,Complete,Quiz,Quiz 1,Cpt_S 122
+2/2/22,Complete,Homework,PA 1,Cpt_S 122
+2/2/22,Complete,Reading,4 Force,Phys 201
+2/2/22,Complete,Reading,3.1,Math 216
+2/2/22,Complete,Homework,Assignment 6,Phys 201
+2/3/22,Complete,Exam,Exam 1 8:30 PM,Math 172
+2/4/22,Complete,Reading,8.2 Integration by Parts,Math 172
+2/4/22,Complete,Reading,5 Dynamics I: Linear Motion,Phys 201
+2/4/22,Complete,Reading,3.2,Math 216
+2/4/22,Complete,Homework,Assignment 7,Phys 201
+2/4/22,Complete,Exam,Exam I,Cpt_S 122
+2/6/22,Complete,Homework,MML 08.0,Math 172
+2/6/22,Complete,Homework,Assignment 8,Phys 201
+2/7/22,Complete,Reading,8.3 Trig Integrals,Math 172
+2/7/22,Complete,Reading,"DD CPP 1.6-1.16, 1",Cpt_S 122
+2/7/22,Complete,Reading,5 Dynamics I: Linear Motion,Phys 201
+2/7/22,Complete,Reading,3.4,Math 216
+2/7/22,Complete,Homework,HW 2,Math 216
+2/8/22,Complete,Lab,Newton's Second Law,Phys 201
+2/8/22,Complete,Homework,Lab Report 2,Phys 211
+2/8/22,Complete,Homework,MML 08.1,Math 172
+2/9/22,Complete,Homework,Written 2,Math 172
+2/9/22,Complete,Reading,8.4a Trig Substitution,Math 172
+2/9/22,Complete,Reading,"DD CPP 3.1-3.4, 6.15, 6.16, 6.18, 6.19",Cpt_S 122
+2/9/22,Complete,Reading,5 Dynamics I: Linear Motion,Phys 201
+2/9/22,Complete,Reading,3.5,Math 216
+2/9/22,Complete,Homework,Assignment 9,Phys 201
+2/10/22,Complete,Homework,MML 08.2,Math 172
+2/11/22,Complete,Reading,8.4b More Trig Substitution,Math 172
+2/11/22,Complete,Reading,DD CPP 3.5-3.8,Cpt_S 122
+2/11/22,Complete,Reading,6 Newton's Third Law,Phys 201
+2/11/22,Complete,Exam,Midterm 1,Math 216
+2/11/22,Complete,Homework,Assignment 10,Phys 201
+2/12/22,Complete,Homework,Written 3,Math 172
+2/13/22,Complete,Homework,Assignment 11,Phys 201
+2/14/22,,Reading,8.5 Partial Fractions,Math 172
+2/14/22,Complete,Reading,"DD CPP 6.12, 6.17, 6.18",Cpt_S 122
+2/14/22,Complete,Homework,PA 2,Cpt_S 122
+2/14/22,,Reading,6 Newton's Third Law,Phys 201
+2/14/22,,Reading,"4.7, 4.8",Math 216
+2/15/22,Complete,Lab,Simple Pendulum,Phys 211
+2/15/22,Complete,Homework,Lab Report 3,Phys 211
+2/15/22,100%,Homework,MML 08.3,Math 172
+2/16/22,,Reading,8.9a Improper Integrals,Math 172
+2/16/22,,Reading,"Opt: HK 13.6, DD C 12.5",Cpt_S 122
+2/16/22,Complete,Quiz,Quiz 2,Cpt_S 122
+2/16/22,,Reading,6 Newton's Third Law,Phys 201
+2/16/22,,Reading,"4.8, 4.10, 5.0",Math 216
+2/16/22,Complete,Homework,Numerical Integration Lab,Math 172
+2/18/22,Complete,Homework,HW 3,Math 216
+2/18/22,,Reading,8.9 Improper Integrals,Math 172
+2/18/22,,Reading,"Req: DD CPP 13.1-13.9, 7.1-7.5, 7.10, 14.1-14.4",Cpt_S 122
+2/18/22,Complete,Exam,Exam I,Phys 201
+2/18/22,Complete,Reading,4.2,Math 216
+2/18/22,Complete,Homework,Written 4,Math 172
+2/19/22,Complete,Homework,Assignment 12,Phys 201
+2/20/22,,Homework,MML 08.4,Math 172
+2/20/22,,Homework,Assignment 13,Phys 201
+2/22/22,,Lab,"Newton's Third Law, Impulse and Momentum",Phys 211
+2/22/22,,Homework,Lab Report 4,Phys 211
+2/23/22,,Reading,10.1 Seq. and Series,Math 172
+2/23/22,,Reading,DD CPP 10.1-10.2,Cpt_S 122
+2/23/22,,Quiz,Quiz 3,Cpt_S 122
+2/23/22,,Reading,7 Dynamics II: Planar Motion,Phys 201
+2/23/22,,Reading,"5.3, 5.3",Math 216
+2/23/22,,Homework,HW 4,Math 216
+2/23/22,,Homework,Assignment 14,Phys 201
+2/24/22,,Homework,MML 08.8,Math 172
+2/25/22,,Reading,10.2 Sequences,Math 172
+2/25/22,,Reading,"DD CPP 8.6-8.8, 9.1-9.15, 10.4-10.6",Cpt_S 122
+2/25/22,,Reading,7 Dynamics II: Planar Motion,Phys 201
+2/25/22,,Reading,4.7,Math 216
+2/25/22,,Homework,Written 5,Math 172
+2/28/22,,Reading,10.3 Geometric Sums,Math 172
+2/28/22,,Reading,"DD CPP 10.8-10.15, 21.1-21.6",Cpt_S 122
+2/28/22,,Quiz,Quiz 4,Cpt_S 122
+2/28/22,,Reading,10 Impulse and Momentum,Phys 201
+2/28/22,,Reading,5.1,Math 216
+2/28/22,,Homework,HW 5,Math 216
+3/1/22,,Lab,Work and Energy,Phys 211
+3/1/22,,Homework,Lab Report 5,Phys 211
+3/2/22,,Reading,DD CPP 18.1-18.6,Cpt_S 122
+3/2/22,,Homework,PA 3,Cpt_S 122
+3/2/22,,Reading,10 Impulse and Momentum,Phys 201
+3/2/22,,Reading,"6.2, 6.2",Math 216
+3/3/22,,Exam,Exam 2 8:30 PM,Math 172
+3/4/22,,Reading,10.4a Divergence and Integral Tests,Math 172
+3/4/22,,Reading,DD CPP 19.1-19.2,Cpt_S 122
+3/4/22,,Reading,8 Work and Kinetic Energy,Phys 201
+3/4/22,,Reading,"8.1, 8.1",Math 216
+3/4/22,,Homework,Written 6,Math 172
+3/7/22,,Reading,10.4b Divergence and Integral Tests,Math 172
+3/7/22,,Reading,DD CPP 19.4-19.5,Cpt_S 122
+3/7/22,,Reading,8 Work and Kinetic Energy,Phys 201
+3/7/22,,Reading,7.3,Math 216
+3/7/22,,Homework,HW 6,Math 216
+3/8/22,,Lab,Buoyancy,Phys 211
+3/8/22,,Homework,Lab Report 6,Phys 211
+3/9/22,,Reading,10.5 Comparison Tests,Math 172
+3/9/22,,Reading,DD CPP 19.6,Cpt_S 122
+3/9/22,,Quiz,Quiz 6,Cpt_S 122
+3/9/22,,Reading,9 Potential Energy,Phys 201
+3/9/22,,Reading,7.5,Math 216
+3/11/22,,Reading,10.6a Abs. and Cond. Convergence,Math 172
+3/11/22,,Reading,"DD CPP 20.1, 20.1",Cpt_S 122
+3/11/22,,Homework,PA 4,Cpt_S 122
+3/11/22,,Reading,9 Potential Energy,Phys 201
+3/11/22,,Reading,"9.1, 9.1",Math 216
+3/11/22,,Homework,Written 7,Math 172
+3/15/22,,Homework,Lab Report 7,Phys 211
+3/18/22,,Homework,Written 8,Math 172
+3/21/22,,Reading,10.6b Abs. and Cond. Convergence,Math 172
+3/21/22,,Reading,"DD CPP 20.3, 20.3",Cpt_S 122
+3/21/22,,Reading,11 Rotational Energy,Phys 201
+3/21/22,,Reading,8.3,Math 216
+3/21/22,,Homework,HW 7,Math 216
+3/22/22,,Lab,"Rotational Dynamics (Force, Torque)",Phys 211
+3/22/22,,Homework,Lab Report 8,Phys 211
+3/23/22,,Reading,10.7 Ratio and Root Tests,Math 172
+3/23/22,,Reading,11 Rotational Energy,Phys 201
+3/23/22,,Reading,8.4,Phys 211
+3/25/22,,Reading,11.1a Taylor Polynomials,Math 172
+3/25/22,,Homework,PA 5,Cpt_S 122
+3/25/22,,Exam,Exam II,Phys 201
+3/25/22,,Exam,Midterm 2,Math 216
+3/25/22,,Homework,Written 9,Math 172
+3/28/22,,Reading,11.1b Taylor Polynomials,Math 172
+3/28/22,,Reading,DD CPP 11.1-11.3,Cpt_S 122
+3/28/22,,Reading,11 Rotational Energy,Phys 201
+3/28/22,,Reading,8.5,Phys 211
+3/28/22,,Homework,HW 8,Math 216
+3/29/22,,Lab,Spring-Mass Oscillations,Phys 211
+3/29/22,,Homework,Lab Report 9,Phys 211
+3/30/22,,Reading,11.2a Power Series Properties,Math 172
+3/30/22,,Reading,DD CPP 11.5-11.6,Cpt_S 122
+3/30/22,,Reading,13 Fluids,Phys 201
+3/30/22,,Reading,8.6,Phys 211
+4/1/22,,Reading,11.2b Power Series Manipulation,Math 172
+4/1/22,,Reading,13 Fluids,Phys 201
+4/1/22,,Reading,8.7,Phys 211
+4/1/22,,Homework,Written 10,Math 172
+4/4/22,,Reading,11.3 & 4 Taylor Series,Math 172
+4/4/22,,Reading,DD CPP 12.1-12.2,Cpt_S 122
+4/4/22,,Reading,13 Fluids,Phys 201
+4/4/22,,Reading,8.8,Phys 211
+4/4/22,,Homework,HW 9,Math 216
+4/5/22,,Lab,Vibrating Strings,Phys 211
+4/5/22,,Homework,Lab Report 10,Phys 211
+4/6/22,,Reading,12.1 Parametric Equations,Math 172
+4/6/22,,Reading,DD CPP 12.4-12.6,Cpt_S 122
+4/6/22,,Homework,PA 6,Cpt_S 122
+4/6/22,,Quiz,Quiz 7,Cpt_S 122
+4/6/22,,Reading,14 Oscillations,Phys 201
+4/6/22,,Reading,8.9,Math 216
+4/8/22,,Reading,12.2 Polar Coordinates,Math 172
+4/8/22,,Reading,"DD CPP 12.8, 12.8",Cpt_S 122
+4/8/22,,Reading,14 Oscillations,Phys 201
+4/8/22,,Reading,9.1,Math 216
+4/8/22,,Homework,Written 11,Math 172
+4/11/22,,Reading,12.3 Calculus with Polar,Math 172
+4/11/22,,Reading,15 Traveling Waves,Phys 201
+4/11/22,,Reading,9.2,Math 216
+4/11/22,,Homework,HW 10,Math 216
+4/12/22,,Lab,Ballistic Pendulum,Phys 211
+4/12/22,,Homework,Lab Report 11,Phys 211
+4/13/22,,Homework,PA 7,Math 216
+4/13/22,,Quiz,Quiz 8,Cpt_S 122
+4/13/22,,Reading,15 Traveling Waves,Phys 201
+4/13/22,,Reading,9.3,Math 216
+4/14/22,,Exam,Exam 3 8:30 PM,Math 172
+4/15/22,,Reading,13.1 Vectors in the plane,Math 172
+4/15/22,,Reading,16 Superposition,Phys 201
+4/15/22,,Reading,9.4,Math 216
+4/15/22,,Homework,Written 12,Math 172
+4/18/22,,Reading,13.2 Vectors in 3D,Math 172
+4/18/22,,Reading,DD CPP 17.1-17.3,Cpt_S 122
+4/18/22,,Reading,16 Superposition,Phys 201
+4/18/22,,Reading,9.5,Math 216
+4/18/22,,Homework,HW 11,Math 216
+4/20/22,,Reading,13.3 Dot Product,Math 172
+4/20/22,,Reading,DD CPP 17.5-17.10,Cpt_S 122
+4/20/22,,Reading,17 Macroscopic Description of Matter,Phys 201
+4/20/22,,Reading,9.6,Math 216
+4/22/22,,Reading,13.4 Cross Product,Math 172
+4/22/22,,Exam,Exam III,Phys 201
+4/25/22,,Reading,13.5 Lines and Planes in Space,Math 172
+4/25/22,,Reading,DD CPP 15.1-15.4,Cpt_S 122
+4/25/22,,Reading,18 First Law of Thermodynamics,Phys 201
+4/25/22,,Homework,HW 12,Math 216
+4/27/22,,Homework,PA 8,Cpt_S 122
+4/27/22,,Reading,18 First Law of Thermodynamics,Phys 201
+4/29/22,,Reading,19 Micro/Macro Connection,Phys 201
+5/2/22,,Exam,Final Exam 7:10PM-10 PM,Math 172
+5/2/22,,Final,Final Exam 10:10AM-12:10PM,Cpt_S 122
+5/2/22,,Final,Final Exam 8AM-10AM,Phys 201
+5/2/22,,Final,Final Exam 8AM-10AM,Math 216

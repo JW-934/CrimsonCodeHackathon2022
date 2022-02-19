@@ -27,6 +27,10 @@ typedef struct date
 typedef struct assignment
 {
 	Date dueDate;
+	char* status;
+	char* type;
+	char* topic;
+	char* class;
 }Assignment;
 
 typedef struct node
@@ -36,6 +40,11 @@ typedef struct node
 }Node;
 
 int promptForOption(int lowerBound, int upperBound);
+int insertFront(Node** pList, char* newDate, char* newStatus, char* newType, char* newTopic, char* newClass);
+
+Node* makeNode(char* newDate, char* newStatus, char* newType, char* newTopic, char* newClass);
 
 void printMenu();
+void scanLine(char* line, char* newDate, char* newStatus, char* newType, char* newTopic, char* newClass);
+void setVarsToDefault(char* line, char* newDate, char* newStatus, char* newType, char* newTopic, char* newClass);
 #endif

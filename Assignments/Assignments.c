@@ -17,17 +17,79 @@ int promptForOption(int lowerBound, int upperBound)
 
 	do
 	{
-		scanf(" %d", &option);
+		scanf("%d", &option);
 	} while (option < lowerBound || option > upperBound);
 
 	return option;
 }
 
-Node* makeNode()
+int insertFront(Node** pList, char* newDate, char* newStatus, char* newType, char* newTopic, char* newClass)
+{
+	Node* newNode = makeNode(newDate, newStatus, newType, newTopic, newClass);
+	int success = 0;
+
+	if (newNode != NULL) // successfully allocated space on heap for Node
+	{
+		if (*pList != NULL) // non empty list
+		{
+			newNode->pNext = *pList;
+		}
+		*pList = newNode;
+		success = 1;
+	}
+	return success;
+}
+
+Node* makeNode(char* newDate, char* newStatus, char* newType, char* newTopic, char* newClass)
+{
+	Node* newNode = (Node*)malloc(sizeof(Node));
+	Assignment* newAssign = (Assignment*)malloc(sizeof(Assignment));
+	Date* newDateStruct = (Date*)malloc(sizeof(Date));
+
+	if (newNode != NULL && newAssign != NULL && newDateStruct != NULL)
+	{
+		// Put date into Date
+		newDateStruct->month = atoi(strtok(newDate, "/"));
+		newDateStruct->day = atoi(strtok(NULL, "/"));
+		newDateStruct->year = atoi(strtok(NULL, ",")) + 2000; // file uses last two numbers of the year so add 2000
+	
+		// Put strings into Assignment
+		strcpy(newAssign->status, newStatus);
+		strcpy(newAssign->type, newType);
+		strcpy(newAssign->topic, newTopic);
+		strcpy(newAssign->class, newClass);
+
+		// Put Date into Assignment
+		newAssign->dueDate = *newDateStruct;
+	}
+	return newNode;
+}
 
 void printMenu()
 {
 	printf("******************** Assignment Manager ********************\n*                                                          *\n");
 	printf("*                1. Display all assignments                *\n*           2. Print upcoming week of assignments          *\n*                 3. Print past assignments                *\n*                          4. Exit                         *\n*                                                          *\n");
 	printf("************************************************************\n");
+}
+
+void scanLine(char* line, char* newDate, char* newStatus, char* newType, char* newTopic, char* newClass)
+{
+	if (line[0] != '\0')
+	{
+		// Populates new node variables with corresponding values from line
+		strcpy(newDate, strtok(line, ","));
+		strcpy(newStatus, strtok(NULL, ","));
+		strcpy(newType, strtok(NULL, ","));
+		strcpy(newTopic, strtok(NULL, ","));
+		strcpy(newClass, strtok(NULL, ","));
+	}
+}
+
+void setVarsToDefault(char* line, char* newDate, char* newStatus, char* newType, char* newTopic, char* newClass)
+{
+	line[0] = '\0';
+	newDate[0] = '\0';
+	newStatus[0] = '\0';
+	newType[0] = '\0';
+	newClass[0] = '\0';
 }

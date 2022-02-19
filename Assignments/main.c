@@ -11,7 +11,9 @@
 
 int main()
 {
-	int option = 0;
+	int option = 0, numAssignments = 0, loadSuccess = 0;
+	char line[100] = "", newDate = "", newStatus = "", newType = "", newTopic = "", newClass = "";
+	Node* pHead = NULL;
 
 	system("color 0c"); // Red text because coug
 
@@ -21,16 +23,19 @@ int main()
 
 	if (infile != NULL) // File opened
 	{
+		// Loads contents of file into linked list
+		while (fgets(line, 100, infile) != NULL)
+		{
+			scanLine(line, newDate, newStatus, newType, newTopic, newClass);
 
+			loadSuccess = insertFront(&pHead, newDate, newStatus, newType, newTopic, newClass);
 
+			setVarsToDefault(line, newDate, newStatus, newType, newTopic, newClass);
 
-
-
-
-
-
-
-
+			++numAssignments;
+		}
+		fclose(infile);
+		printf("Playlist loaded!\n\n");
 
 		do
 		{
@@ -57,7 +62,7 @@ int main()
 
 
 
-		fclose(infile);
+		//fclose(infile);
 	}
 	else // File not opened
 	{
