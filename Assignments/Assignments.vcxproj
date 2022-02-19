@@ -143,10 +143,10 @@
     <ClCompile Include="Assignments.c" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assignments Spring 2022.csv" />
+    <ClInclude Include="Assignments.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Assignments.h" />
+    <None Include="Assignments Spring 2022.csv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
