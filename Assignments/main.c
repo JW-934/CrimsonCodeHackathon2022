@@ -6,3 +6,10 @@
 * Description: This program takes a .csv of a student's past and upcoming assignments for the semester and allows them
 *			   to traverse the assignments by date, priority, class, upcoming, and past.
 */
+
+#include "Assignments.h"
+
+int main()
+{
+
+}
