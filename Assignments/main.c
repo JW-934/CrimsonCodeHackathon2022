@@ -10,7 +10,7 @@
 *			   are in the same classes for support but I doubt I will have the time to get it all working.
 * 
 *			   The overall intent is to allow students to effectively manage their time by showing what would be the 
-*			   most beneficial things for them to work on at any given time by analysing priority and due dates.
+*			   most beneficial things for them to work on at any given time by analyzing priority and due dates. 
 */
 
 #include "Assignments.h"
@@ -39,7 +39,7 @@ int main()
 			// Replaces empty fields with a *
 			starsInEmptyFields(line, strlen(line));
 
-			puts(line);
+			//puts(line);
 			scanLine(line, newDate, newStatus, newType, newTopic, newCourse);
 
 			insertFront(&pHead, newDate, newStatus, newType, newTopic, newCourse);
@@ -59,7 +59,8 @@ int main()
 			switch (option)
 			{
 			case 1: // Print all
-				printListRec(pHead);
+				//printListRec(pHead);
+				printList(pHead);
 				break;
 			case 2: // Print upcoming week of assignments
 

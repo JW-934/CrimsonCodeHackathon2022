@@ -34,9 +34,9 @@ typedef struct assignment
 {
 	Date dueDate;
 	char status[15];
-	char* type[15];
-	char* topic[50];
-	char* course[15];
+	char type[15];
+	char topic[50];
+	char course[15];
 }Assignment;
 
 typedef struct node
@@ -54,6 +54,6 @@ void scanLine(char* line, char* newDate, char* newStatus, char* newType, char* n
 void setVarsToDefault(char* line, char* newDate, char* newStatus, char* newType, char* newTopic, char* newCourse);
 void starsInEmptyFields(char* str, int length);
 void insertFront(Node** pList, char* newDate, char* newStatus, char* newType, char* newTopic, char* newCourse);
-//void printList(Node* pHead);
+void printList(Node* pHead);
 void printListRec(Node* pHead);
 #endif

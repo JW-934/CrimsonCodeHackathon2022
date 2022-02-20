@@ -127,16 +127,16 @@ void starsInEmptyFields(char* str, int length)
 	return;
 }
 
-//void printList(Node *pHead)
-//{
-//	Node* pCur = pHead;
-//	while (pCur != NULL)
-//	{
-//		printf("%d/%d/%d %s %s %s %s\n", pCur->assignment.dueDate.month, pCur->assignment.dueDate.day, pCur->assignment.dueDate.year,
-//			pCur->assignment.status, pCur->assignment.type, pCur->assignment.topic, pCur->assignment.course);
-//		pCur = pCur->pNext;
-//	}
-//}
+void printList(Node *pHead)
+{
+	Node* pCur = pHead;
+	while (pCur != NULL)
+	{
+		printf("%d/%d/%d %s %s %s %s\n", pCur->assignment.dueDate.month, pCur->assignment.dueDate.day, pCur->assignment.dueDate.year,
+			pCur->assignment.status, pCur->assignment.type, pCur->assignment.topic, pCur->assignment.course);
+		pCur = pCur->pNext;
+	}
+}
 
 void printListRec(Node* pHead)
 {
