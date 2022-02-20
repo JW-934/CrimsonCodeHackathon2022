@@ -4,7 +4,8 @@
 * Assignment: CrimsonCode Hackathon 2022
 * Date: February 19, 2022
 * Description: This program takes a .csv of a student's past and upcoming assignments for the semester and allows them
-*			   to view the assignments by date, priority, class, upcoming, and past.
+*			   to view the assignments by date, priority, class, upcoming, and past. The .csv file is intended to be
+*			   stored in Microsoft Onedrive so the program will be kept up to date through their cloud service.
 */
 
 #include "Assignments.h"
