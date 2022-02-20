@@ -17,7 +17,7 @@ int promptForOption(int lowerBound, int upperBound)
 
 	do
 	{
-		scanf("%d", &option);
+		scanf(" %d", &option);
 	} while (option < lowerBound || option > upperBound);
 
 	return option;
@@ -42,6 +42,7 @@ int insertFront(Node** pList, char* newDate, char* newStatus, char* newType, cha
 
 Node* makeNode(char* newDate, char* newStatus, char* newType, char* newTopic, char* newClass)
 {
+	// Allocates memory for Node, Assignment, and Date
 	Node* newNode = (Node*)malloc(sizeof(Node));
 	Assignment* newAssign = (Assignment*)malloc(sizeof(Assignment));
 	Date* newDateStruct = (Date*)malloc(sizeof(Date));
@@ -53,14 +54,14 @@ Node* makeNode(char* newDate, char* newStatus, char* newType, char* newTopic, ch
 		newDateStruct->day = atoi(strtok(NULL, "/"));
 		newDateStruct->year = atoi(strtok(NULL, ",")) + 2000; // file uses last two numbers of the year so add 2000
 	
+		// Put Date into Assignment
+		newAssign->dueDate = *newDateStruct;
+
 		// Put strings into Assignment
 		strcpy(newAssign->status, newStatus);
 		strcpy(newAssign->type, newType);
 		strcpy(newAssign->topic, newTopic);
 		strcpy(newAssign->class, newClass);
-
-		// Put Date into Assignment
-		newAssign->dueDate = *newDateStruct;
 	}
 	return newNode;
 }
@@ -74,15 +75,20 @@ void printMenu()
 
 void scanLine(char* line, char* newDate, char* newStatus, char* newType, char* newTopic, char* newClass)
 {
-	if (line[0] != '\0')
+	// Populates new node variables with corresponding values from line
+	strcpy(newDate, strtok(line, ","));
+	if (newStatus[0] == '\0')
 	{
-		// Populates new node variables with corresponding values from line
-		strcpy(newDate, strtok(line, ","));
-		strcpy(newStatus, strtok(NULL, ","));
-		strcpy(newType, strtok(NULL, ","));
-		strcpy(newTopic, strtok(NULL, ","));
-		strcpy(newClass, strtok(NULL, ","));
+		strcpy(newStatus, "Incomplete");
 	}
+	else
+	{
+		strcpy(newStatus, newStatus);
+	}
+	// strcpy(newStatus, strtok(NULL, ","));
+	strcpy(newType, strtok(NULL, ","));
+	strcpy(newTopic, strtok(NULL, ","));
+	strcpy(newClass, strtok(NULL, "\n"));
 }
 
 void setVarsToDefault(char* line, char* newDate, char* newStatus, char* newType, char* newTopic, char* newClass)

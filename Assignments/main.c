@@ -12,7 +12,7 @@
 int main()
 {
 	int option = 0, numAssignments = 0, loadSuccess = 0;
-	char line[100] = "", newDate = "", newStatus = "", newType = "", newTopic = "", newClass = "";
+	char line[100] = "", newDate[10] = "", newStatus[15] = "", newType[15] = "", newTopic[50] = "", newClass[15] = "";
 	Node* pHead = NULL;
 
 	system("color 0c"); // Red text because coug
@@ -23,9 +23,14 @@ int main()
 
 	if (infile != NULL) // File opened
 	{
+		// discards header
+		fgets(line, 100, infile);
+		// puts(line);
+		line[0] = '/0';
 		// Loads contents of file into linked list
 		while (fgets(line, 100, infile) != NULL)
 		{
+			puts(line);
 			scanLine(line, newDate, newStatus, newType, newTopic, newClass);
 
 			loadSuccess = insertFront(&pHead, newDate, newStatus, newType, newTopic, newClass);

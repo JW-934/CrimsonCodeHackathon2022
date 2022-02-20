@@ -27,16 +27,16 @@ typedef struct date
 typedef struct assignment
 {
 	Date dueDate;
-	char* status;
-	char* type;
-	char* topic;
-	char* class;
+	char status[15];
+	char* type[15];
+	char* topic[50];
+	char* class[15];
 }Assignment;
 
 typedef struct node
 {
 	Assignment assignment;
-	Node* pNext;
+	struct node* pNext;
 }Node;
 
 int promptForOption(int lowerBound, int upperBound);
