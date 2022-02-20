@@ -147,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assignments Spring 2022.csv" />
+    <None Include="Testing.csv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

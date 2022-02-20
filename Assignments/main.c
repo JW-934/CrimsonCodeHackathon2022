@@ -18,21 +18,23 @@
 int main()
 {
 	int option = 0, numAssignments = 0;
-	char line[100] = "", newDate[10] = "", newStatus[15] = "", newType[15] = "", newTopic[50] = "", newCourse[15] = "";
+	char line[100] = "", newDate[10] = "", newStatus[15] = "", newType[15] = "", newTopic[50] = "", newCourse[20] = "";
 	Node* pHead = NULL;
 
 	system("color 0c"); // Red text because Coug
 
 	FILE* infile = NULL;
 
-	infile = fopen("Assignments Spring 2022.csv", "r");
+	infile = fopen(INPUTFILE, "r");
 
 	if (infile != NULL) // File opened
 	{
 		// discards header
 		fgets(line, 100, infile);
+		
 		// puts(line);
 		line[0] = '/0';
+
 		// Loads contents of file into linked list
 		while (fgets(line, 100, infile) != NULL)
 		{
@@ -41,7 +43,7 @@ int main()
 
 			//puts(line);
 			scanLine(line, newDate, newStatus, newType, newTopic, newCourse);
-
+			//printf("%s, %s, %s, %s, %s", newDate, newStatus, newType, newTopic, newCourse);
 			insertFront(&pHead, newDate, newStatus, newType, newTopic, newCourse);
 
 			setVarsToDefault(line, newDate, newStatus, newType, newTopic, newCourse);
@@ -73,10 +75,6 @@ int main()
 				break;
 			}
 		} while (option != 4);
-
-
-
-
 		//fclose(infile);
 	}
 	else // File not opened

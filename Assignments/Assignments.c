@@ -29,7 +29,7 @@ int promptForOption(int lowerBound, int upperBound)
 	return option;
 }
 
-void insertFront(Node** pList, char* newDate, char* newStatus, char* newType, char* newTopic, char* newCourse)
+void insertFront(Node** pList, char* newDate, char* newStatus, char* newType, char* newTopic, char* newCourse) 
 {
 	Node* newNode = makeNode(newDate, newStatus, newType, newTopic, newCourse);
 
@@ -39,17 +39,21 @@ void insertFront(Node** pList, char* newDate, char* newStatus, char* newType, ch
 		{
 			newNode->pNext = *pList;
 		}
-		*pList = newNode;
+		else 
+		{
+
+		}
 	}
+	*pList = newNode;
 }
 
 Node* makeNode(char* newDate, char* newStatus, char* newType, char* newTopic, char* newCourse)
 {
 	// Allocates memory for Node, Assignment, and Date
 	Node* newNode = (Node*)malloc(sizeof(Node));
-	Assignment* newAssign = (Assignment*)malloc(sizeof(Assignment));
-	Date* newDateStruct = (Date*)malloc(sizeof(Date));
-
+	Assignment* newAssign = (Assignment*)malloc(sizeof(Assignment) * 2); // 2 * sizeof because for some reason every few executions 
+	Date* newDateStruct = (Date*)malloc(sizeof(Date));					 // line 50 would "trigger a breakpoint" so somehow it 
+																		 // wasn't allocating enough space some of the time?
 	if (newNode != NULL && newAssign != NULL && newDateStruct != NULL)
 	{
 		// Put date into Date
@@ -65,6 +69,11 @@ Node* makeNode(char* newDate, char* newStatus, char* newType, char* newTopic, ch
 		strcpy(newAssign->type, newType);
 		strcpy(newAssign->topic, newTopic);
 		strcpy(newAssign->course, newCourse);
+
+		// Put Assignment into Node
+		newNode->assignment = *newAssign;
+
+		newNode->pNext = NULL;
 	}
 	return newNode;
 }
@@ -136,13 +145,14 @@ void printList(Node *pHead)
 			pCur->assignment.status, pCur->assignment.type, pCur->assignment.topic, pCur->assignment.course);
 		pCur = pCur->pNext;
 	}
+	putchar('\n');
 }
 
 void printListRec(Node* pHead)
 {
-	if (pHead != NULL) //
+	if (pHead != NULL)
 	{
-		printf("--> %d/%d/%d %s %s %s %s", pHead->assignment.dueDate.month, pHead->assignment.dueDate.day, pHead->assignment.dueDate.year,
+		printf("--> %d/%d/%d %s %s %s %s\n", pHead->assignment.dueDate.month, pHead->assignment.dueDate.day, pHead->assignment.dueDate.year,
 			pHead->assignment.status, pHead->assignment.type, pHead->assignment.topic, pHead->assignment.course);
 		printListRec(pHead->pNext);
 	}

@@ -17,6 +17,8 @@
 
 #define ASSIGNMENTS_H
 #define _CRT_SECURE_NO_WARNINGS
+//#define INPUTFILE "Assignments Spring 2022.csv"
+#define INPUTFILE "Testing.csv"
 
 #include <stdio.h>
 #include <string.h>
@@ -36,7 +38,7 @@ typedef struct assignment
 	char status[15];
 	char type[15];
 	char topic[50];
-	char course[15];
+	char course[20];
 }Assignment;
 
 typedef struct node
