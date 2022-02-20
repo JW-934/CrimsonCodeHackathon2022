@@ -356,8 +356,8 @@ void printByPriority(Node* pHead)
 	//	strcpy(targetPriority, "Low Priority");
 	//}
 
-	if (pCur != NULL)
-	{
+	//if (pCur != NULL)
+	//{
 		// Prints High Priorities
 		while (pCur != NULL)
 		{
@@ -391,5 +391,5 @@ void printByPriority(Node* pHead)
 			pCur = pCur->pNext;
 		}
 		putchar('\n');
-	}
+	//}
 }
