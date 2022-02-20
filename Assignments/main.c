@@ -18,7 +18,7 @@
 int main()
 {
 	int option = 0, numAssignments = 0, currentMonth = 0, currentDay = 0, currentYear = 0;
-	char line[100] = "", newDate[10] = "", newStatus[15] = "", newType[15] = "", newTopic[50] = "", newCourse[20] = "", targetCourse[20] = "";
+	char line[100] = "", newDate[10] = "", newStatus[15] = "", newType[15] = "", newTopic[50] = "", newCourse[20] = "", targetCourse[20] = "", targetPriority[30] = "";
 	Node* pHead = NULL;
 	
 	time_t now;
@@ -65,7 +65,7 @@ int main()
 		do
 		{
 			printMenu();
-			option = promptForOption(1, 6);
+			option = promptForOption(1, 7);
 
 			switch (option)
 			{
@@ -94,15 +94,18 @@ int main()
 
 				targetCourse[0] = '\0';
 				break;
-			case 5: // Help
+			case 5: // Print by priority
+				printByPriority(pHead);
+				break;
+			case 6: // Help
 				system("cls");
 
 				printResources();
 				break;
-			case 6: // Exit
+			case 7: // Exit
 				break;
 			}
-		} while (option != 6);
+		} while (option != 7);
 		//fclose(infile);
 	}
 	else // File not opened

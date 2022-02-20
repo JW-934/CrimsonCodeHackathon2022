@@ -48,6 +48,31 @@ char* promptForCourse(Node* pHead)
 	}
 }
 
+char* promptForPriority()
+{
+	int found = 0;
+	char targetPriority[20] = "", discard[2] = "";
+
+	do
+	{
+		printf("\nEnter a priority (High, Medium, or Low) > ");
+
+		fgets(discard, 2, stdin);
+		fgets(targetPriority, 20, stdin);
+		targetPriority[strlen(targetPriority) - 1] = '\0'; // Gets rid of newline at end from fgets
+		
+		if (strcmp(targetPriority, "High") == 0 || strcmp(targetPriority, "Medium") == 0 || strcmp(targetPriority, "Low") == 0)
+		{
+			++found;
+		}
+		else
+		{
+			printf("\nThis is not a valid priority level.\n");
+		}
+	} while (found == 0);
+	return targetPriority;
+}
+
 int promptForOption(int lowerBound, int upperBound)
 {
 	int option = 0;
@@ -133,8 +158,9 @@ void printMenu()
 	printf("*           2. Print upcoming week of assignments          *\n");
 	printf("*                 3. Print past assignments                *\n");
 	printf("*        4. Print assignments from a certain course        *\n");
-	printf("*                          5. Help                         *\n");
-	printf("*                          6. Exit                         *\n");
+	printf("*            5. Print by priority (High to Low)            *\n");
+	printf("*                          6. Help                         *\n");
+	printf("*                          7. Exit                         *\n");
 	printf("*                                                          *\n");
 	printf("************************************************************\n");
 }
@@ -307,4 +333,63 @@ void printResources()
 	putchar('\n');
 
 	Sleep(8000); // Sleep to allow user to see all options without scrolling up
+}
+
+void printByPriority(Node* pHead)
+{
+	Node* pCur = pHead;
+
+	//// Changes targetPriority into correct format
+	//if (strcmp(targetPriority, "High") == 0)
+	//{
+	//	targetPriority[0] = "\0";
+	//	strcpy(targetPriority, "HIGH PRIORITY");
+	//}
+	//else if (strcmp(targetPriority, "Medium") == 0)
+	//{
+	//	targetPriority[0] = "\0";
+	//	strcpy(targetPriority, "Medium Priority");
+	//}
+	//else if (strcmp(targetPriority, "Low") == 0)
+	//{
+	//	targetPriority[0] = "\0";
+	//	strcpy(targetPriority, "Low Priority");
+	//}
+
+	if (pCur != NULL)
+	{
+		// Prints High Priorities
+		while (pCur != NULL)
+		{
+			if (strcmp(pCur->assignment.priority, "HIGH PRIORITY") == 0)
+			{
+				printf("%d/%d/%d %s %s %s %s (%s)\n", pCur->assignment.dueDate.month, pCur->assignment.dueDate.day, pCur->assignment.dueDate.year,
+					pCur->assignment.status, pCur->assignment.type, pCur->assignment.topic, pCur->assignment.course, pCur->assignment.priority);
+			}
+			pCur = pCur->pNext;
+		}
+		// Prints Medium Priorities
+		pCur = pHead;
+		while (pCur != NULL)
+		{
+			if (strcmp(pCur->assignment.priority, "Medium Priority") == 0)
+			{
+				printf("%d/%d/%d %s %s %s %s (%s)\n", pCur->assignment.dueDate.month, pCur->assignment.dueDate.day, pCur->assignment.dueDate.year,
+					pCur->assignment.status, pCur->assignment.type, pCur->assignment.topic, pCur->assignment.course, pCur->assignment.priority);
+			}
+			pCur = pCur->pNext;
+		}
+		// Prints Low Priorities
+		pCur = pHead;
+		while (pCur != NULL)
+		{
+			if (strcmp(pCur->assignment.priority, "Low Priority") == 0)
+			{
+				printf("%d/%d/%d %s %s %s %s (%s)\n", pCur->assignment.dueDate.month, pCur->assignment.dueDate.day, pCur->assignment.dueDate.year,
+					pCur->assignment.status, pCur->assignment.type, pCur->assignment.topic, pCur->assignment.course, pCur->assignment.priority);
+			}
+			pCur = pCur->pNext;
+		}
+		putchar('\n');
+	}
 }

@@ -50,6 +50,7 @@ typedef struct node
 }Node;
 
 char* promptForCourse(Node* pHead);
+char* promptForPriority();
 
 int promptForOption(int lowerBound, int upperBound);
 
@@ -65,4 +66,5 @@ void printListRec(Node* pHead);
 void printUpcomings(Node* pHead, int curMonth, int curDay, int curYear);
 void printCourseAssignments(Node* pHead, char* targetCourse);
 void printResources();
+void printByPriority(Node* pHead);
 #endif
