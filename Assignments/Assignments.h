@@ -4,13 +4,12 @@
 * Assignment: CrimsonCode Hackathon 2022
 * Date: February 19, 2022
 * Description: This program takes a .csv of a student's past and upcoming assignments for the semester and allows them
-*			   to view the assignments by date, priority, class, upcoming, and past. The .csv file is intended to be
-*			   stored in Microsoft Onedrive so the program will be kept up to date through their cloud service. I would
-*			   also like to include some other elements like on campus resources and a list of the user's friends that
-*			   are in the same classes for support but I doubt I will have the time to get it all working.
+*			   to view the assignments by date, priority, class, and upcoming. The .csv file is intended to be
+*			   stored in Microsoft Onedrive or another service so the program can be kept up to date and edited from a
+*			   computer or mobile device. Resources for mental health and homework support have also been included.
 *
 *			   The overall intent is to allow students to effectively manage their time by showing what would be the
-*			   most beneficial things for them to work on at any given time by analysing priority and due dates.
+*			   most beneficial things for them to work on at any given time by analyzing priority and due dates.
 */
 
 #ifndef ASSIGNMENTS_H
