@@ -17,13 +17,14 @@
 
 #define ASSIGNMENTS_H
 #define _CRT_SECURE_NO_WARNINGS
-//#define INPUTFILE "Assignments Spring 2022.csv"
-#define INPUTFILE "Testing.csv"
+#define INPUTFILE "Assignments Spring 2022.csv"
+//#define INPUTFILE "Testing.csv"
 
 #include <stdio.h>
 #include <string.h>
 #include <Windows.h>
 #include <stdlib.h>
+#include <time.h>
 
 typedef struct date
 {
@@ -58,4 +59,5 @@ void starsInEmptyFields(char* str, int length);
 void insertFront(Node** pList, char* newDate, char* newStatus, char* newType, char* newTopic, char* newCourse);
 void printList(Node* pHead);
 void printListRec(Node* pHead);
+void printUpcomings(Node* pHead, int curMonth, int curDay, int curYear);
 #endif

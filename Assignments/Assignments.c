@@ -94,11 +94,18 @@ void scanLine(char* line, char* newDate, char* newStatus, char* newType, char* n
 
 	if (strcmp(tempStatus, "*") == 0)
 	{
-		strcpy(newStatus, "Incomplete");
+		strcpy(newStatus, "INCOMPLETE");
 	}
 	else
 	{
-		strcpy(newStatus, tempStatus);
+		if (strcmp(tempStatus, "Complete") == 0)
+		{
+			strcpy(newStatus, "~COMPLETE~");
+		}
+		else
+		{
+			strcpy(newStatus, tempStatus);
+		}
 	}
 
 	strcpy(newType, strtok(NULL, ","));
@@ -159,5 +166,28 @@ void printListRec(Node* pHead)
 	else 
 	{
 		printf("\n");
+	}
+}
+
+void printUpcomings(Node* pHead, int curMonth, int curDay, int curYear)
+{
+	Node* pCur = pHead;
+
+	if (pCur != NULL)
+	{
+		while (pCur != NULL)
+		{
+			if ((pCur->assignment.dueDate.month == curMonth && pCur->assignment.dueDate.day == curDay 
+				&& pCur->assignment.dueDate.year == curYear) || (pCur->assignment.dueDate.month == curMonth 
+				&& pCur->assignment.dueDate.year == curYear && (pCur->assignment.dueDate.day == curDay + 1
+				|| pCur->assignment.dueDate.day == curDay + 2 || pCur->assignment.dueDate.day == curDay + 3
+				|| pCur->assignment.dueDate.day == curDay + 4 || pCur->assignment.dueDate.day == curDay + 5
+				|| pCur->assignment.dueDate.day == curDay + 6 )))
+			{
+				printf("%d/%d/%d %s %s %s %s\n", pCur->assignment.dueDate.month, pCur->assignment.dueDate.day, pCur->assignment.dueDate.year,
+					pCur->assignment.status, pCur->assignment.type, pCur->assignment.topic, pCur->assignment.course);
+			}
+			pCur = pCur->pNext;
+		}
 	}
 }

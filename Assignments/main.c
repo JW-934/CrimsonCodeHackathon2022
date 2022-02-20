@@ -17,9 +17,18 @@
 
 int main()
 {
-	int option = 0, numAssignments = 0;
+	int option = 0, numAssignments = 0, currentMonth = 0, currentDay = 0, currentYear = 0;
 	char line[100] = "", newDate[10] = "", newStatus[15] = "", newType[15] = "", newTopic[50] = "", newCourse[20] = "";
 	Node* pHead = NULL;
+	
+	time_t now;
+	time(&now);
+	struct tm* local = localtime(&now);
+
+	// Gets current date to show upcoming assignments
+	currentMonth = local->tm_mon + 1;
+	currentDay = local->tm_mday;
+	currentYear = local->tm_year + 1900;
 
 	system("color 0c"); // Red text because Coug
 
@@ -65,7 +74,7 @@ int main()
 				printList(pHead);
 				break;
 			case 2: // Print upcoming week of assignments
-
+				printUpcomings(pHead, currentMonth, currentDay, currentYear);
 				break;
 			case 3: // Print past assignments
 
