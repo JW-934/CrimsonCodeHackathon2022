@@ -103,6 +103,20 @@ Node* makeNode(char* newDate, char* newStatus, char* newType, char* newTopic, ch
 		strcpy(newAssign->topic, newTopic);
 		strcpy(newAssign->course, newCourse);
 
+		// Assigns priority
+		if (strcmp(newType, "Exam") == 0 || strcmp(newType, "Final") == 0 || strcmp(newType, "Quiz") == 0)
+		{
+			strcpy(newAssign->priority, "HIGH PRIORITY");
+		}
+		else if (strcmp(newType, "Homework") == 0 || strcmp(newType, "Lab") == 0)
+		{
+			strcpy(newAssign->priority, "Medium Priority");
+		}
+		else if (strcmp(newType, "Reading") == 0)
+		{
+			strcpy(newAssign->priority, "Low Priority");
+		}
+
 		// Put Assignment into Node
 		newNode->assignment = *newAssign;
 
@@ -119,7 +133,8 @@ void printMenu()
 	printf("*           2. Print upcoming week of assignments          *\n");
 	printf("*                 3. Print past assignments                *\n");
 	printf("*        4. Print assignments from a certain course        *\n");
-	printf("*                          5. Exit                         *\n");
+	printf("*                          5. Help                         *\n");
+	printf("*                          6. Exit                         *\n");
 	printf("*                                                          *\n");
 	printf("************************************************************\n");
 }
@@ -188,8 +203,8 @@ void printList(Node *pHead)
 	Node* pCur = pHead;
 	while (pCur != NULL)
 	{
-		printf("%d/%d/%d %s %s %s %s\n", pCur->assignment.dueDate.month, pCur->assignment.dueDate.day, pCur->assignment.dueDate.year,
-			pCur->assignment.status, pCur->assignment.type, pCur->assignment.topic, pCur->assignment.course);
+		printf("%d/%d/%d %s %s %s %s (%s)\n", pCur->assignment.dueDate.month, pCur->assignment.dueDate.day, pCur->assignment.dueDate.year,
+			pCur->assignment.status, pCur->assignment.type, pCur->assignment.topic, pCur->assignment.course, pCur->assignment.priority);
 		pCur = pCur->pNext;
 	}
 	putchar('\n');
@@ -199,8 +214,8 @@ void printListRec(Node* pHead)
 {
 	if (pHead != NULL)
 	{
-		printf("--> %d/%d/%d %s %s %s %s\n", pHead->assignment.dueDate.month, pHead->assignment.dueDate.day, pHead->assignment.dueDate.year,
-			pHead->assignment.status, pHead->assignment.type, pHead->assignment.topic, pHead->assignment.course);
+		printf("--> %d/%d/%d %s %s %s %s (%s)\n", pHead->assignment.dueDate.month, pHead->assignment.dueDate.day, pHead->assignment.dueDate.year,
+			pHead->assignment.status, pHead->assignment.type, pHead->assignment.topic, pHead->assignment.course, pHead->assignment.priority);
 		printListRec(pHead->pNext);
 	}
 	else 
@@ -224,8 +239,8 @@ void printUpcomings(Node* pHead, int curMonth, int curDay, int curYear)
 				|| pCur->assignment.dueDate.day == curDay + 4 || pCur->assignment.dueDate.day == curDay + 5
 				|| pCur->assignment.dueDate.day == curDay + 6 )))
 			{
-				printf("%d/%d/%d %s %s %s %s\n", pCur->assignment.dueDate.month, pCur->assignment.dueDate.day, pCur->assignment.dueDate.year,
-					pCur->assignment.status, pCur->assignment.type, pCur->assignment.topic, pCur->assignment.course);
+				printf("%d/%d/%d %s %s %s %s (%s)\n", pCur->assignment.dueDate.month, pCur->assignment.dueDate.day, pCur->assignment.dueDate.year,
+					pCur->assignment.status, pCur->assignment.type, pCur->assignment.topic, pCur->assignment.course, pCur->assignment.priority);
 			}
 			pCur = pCur->pNext;
 		}
@@ -243,8 +258,8 @@ void printPasts(Node* pHead, int curMonth, int curDay, int curYear)
 		{
 			if (pCur->assignment.dueDate.month < curMonth || (pCur->assignment.dueDate.day < curDay && pCur->assignment.dueDate.month == curMonth) || pCur->assignment.dueDate.year < curYear)
 			{
-				printf("%d/%d/%d %s %s %s %s\n", pCur->assignment.dueDate.month, pCur->assignment.dueDate.day, pCur->assignment.dueDate.year,
-					pCur->assignment.status, pCur->assignment.type, pCur->assignment.topic, pCur->assignment.course);
+				printf("%d/%d/%d %s %s %s %s (%s)\n", pCur->assignment.dueDate.month, pCur->assignment.dueDate.day, pCur->assignment.dueDate.year,
+					pCur->assignment.status, pCur->assignment.type, pCur->assignment.topic, pCur->assignment.course, pCur->assignment.priority);
 			}
 			pCur = pCur->pNext;
 		}
@@ -262,11 +277,34 @@ void printCourseAssignments(Node* pHead, char* targetCourse)
 		{
 			if (strcmp(pCur->assignment.course, targetCourse) == 0)
 			{
-				printf("%d/%d/%d %s %s %s %s\n", pCur->assignment.dueDate.month, pCur->assignment.dueDate.day, pCur->assignment.dueDate.year,
-					pCur->assignment.status, pCur->assignment.type, pCur->assignment.topic, pCur->assignment.course);
+				printf("%d/%d/%d %s %s %s %s (%s)\n", pCur->assignment.dueDate.month, pCur->assignment.dueDate.day, pCur->assignment.dueDate.year,
+					pCur->assignment.status, pCur->assignment.type, pCur->assignment.topic, pCur->assignment.course, pCur->assignment.priority);
 			}
 			pCur = pCur->pNext;
 		}
 		putchar('\n');
 	}
+}
+
+void printResources()
+{
+	printf("\n******************** Mental Health Resources ********************\n\n");
+	printf("24 Hour National Suicide Prevention Lifeline: 800-273-8255\n\n");
+	printf("Cougar Health Counseling and Psychological Services: 509-335-4511\n\n");
+
+	printf("******************** Homework Help Resources ********************\n\n");
+	printf("Math Learning Center (Cleveland 130):\n-------------------------------------\n");
+	printf("Open Sunday: 4-9PM, Monday-Thursday: 10AM-9PM, Friday: 10AM-5PM\n\n");
+
+	printf("Undergraduate Writing Center:\n-----------------------------\n");
+	printf("Smith CUE 303: Open Monday-Thursday: 10AM-4PM (By appt.)\n");
+	printf("Terrell Library: Open Tuesday and Wednesday: 4PM-6PM (Drop In)\n");
+	printf("Online: Open Monday and Thursday 5PM-8PM with various hours Monday-Friday (By appt.)\n\n");
+
+	printf("Academic Success and Career Center: https://ascc.wsu.edu/ \n-----------------------------------\n");
+	printf("VCEA Tutoring Schedule: https://vcea.wsu.edu/student-success/tutoring/tutoring-schedule/ \n-----------------------\n");
+
+	putchar('\n');
+
+	Sleep(8000); // Sleep to allow user to see all options without scrolling up
 }

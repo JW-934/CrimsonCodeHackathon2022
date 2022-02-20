@@ -40,6 +40,7 @@ typedef struct assignment
 	char type[15];
 	char topic[50];
 	char course[20];
+	char priority[30];
 }Assignment;
 
 typedef struct node
@@ -63,4 +64,5 @@ void printList(Node* pHead);
 void printListRec(Node* pHead);
 void printUpcomings(Node* pHead, int curMonth, int curDay, int curYear);
 void printCourseAssignments(Node* pHead, char* targetCourse);
+void printResources();
 #endif

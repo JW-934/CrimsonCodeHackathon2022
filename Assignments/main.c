@@ -65,32 +65,44 @@ int main()
 		do
 		{
 			printMenu();
-			option = promptForOption(1, 5);
+			option = promptForOption(1, 6);
 
 			switch (option)
 			{
 			case 1: // Print all
+				system("cls");
 				//printListRec(pHead);
 				printList(pHead);
 				break;
 			case 2: // Print upcoming week of assignments
+				system("cls");
+
 				printUpcomings(pHead, currentMonth, currentDay, currentYear);
 				break;
 			case 3: // Print past assignments
+				system("cls");
+
 				printPasts(pHead, currentMonth, currentDay, currentYear);
 				break;
 
 			case 4: // Print assignments from a certain course
+				system("cls");
+
 				strcpy(targetCourse, promptForCourse(pHead));
 				puts(targetCourse);
 				printCourseAssignments(pHead, targetCourse);
 
 				targetCourse[0] = '\0';
 				break;
-			case 5: // Exit
+			case 5: // Help
+				system("cls");
+
+				printResources();
+				break;
+			case 6: // Exit
 				break;
 			}
-		} while (option != 5);
+		} while (option != 6);
 		//fclose(infile);
 	}
 	else // File not opened
