@@ -18,7 +18,7 @@
 int main()
 {
 	int option = 0, numAssignments = 0, currentMonth = 0, currentDay = 0, currentYear = 0;
-	char line[100] = "", newDate[10] = "", newStatus[15] = "", newType[15] = "", newTopic[50] = "", newCourse[20] = "";
+	char line[100] = "", newDate[10] = "", newStatus[15] = "", newType[15] = "", newTopic[50] = "", newCourse[20] = "", targetCourse[20] = "";
 	Node* pHead = NULL;
 	
 	time_t now;
@@ -60,12 +60,12 @@ int main()
 			++numAssignments;
 		}
 		fclose(infile);
-		printf("Playlist loaded!\n\n");
+		printf("Assignments loaded!\n\n");
 
 		do
 		{
 			printMenu();
-			option = promptForOption(1, 4);
+			option = promptForOption(1, 5);
 
 			switch (option)
 			{
@@ -77,13 +77,20 @@ int main()
 				printUpcomings(pHead, currentMonth, currentDay, currentYear);
 				break;
 			case 3: // Print past assignments
-
+				printPasts(pHead, currentMonth, currentDay, currentYear);
 				break;
 
-			case 4: // Exit
+			case 4: // Print assignments from a certain course
+				strcpy(targetCourse, promptForCourse(pHead));
+				puts(targetCourse);
+				printCourseAssignments(pHead, targetCourse);
+
+				targetCourse[0] = '\0';
+				break;
+			case 5: // Exit
 				break;
 			}
-		} while (option != 4);
+		} while (option != 5);
 		//fclose(infile);
 	}
 	else // File not opened

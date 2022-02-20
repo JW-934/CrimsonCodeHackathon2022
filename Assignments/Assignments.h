@@ -48,6 +48,8 @@ typedef struct node
 	struct node* pNext;
 }Node;
 
+char* promptForCourse(Node* pHead);
+
 int promptForOption(int lowerBound, int upperBound);
 
 Node* makeNode(char* newDate, char* newStatus, char* newType, char* newTopic, char* newCourse);
@@ -60,4 +62,5 @@ void insertFront(Node** pList, char* newDate, char* newStatus, char* newType, ch
 void printList(Node* pHead);
 void printListRec(Node* pHead);
 void printUpcomings(Node* pHead, int curMonth, int curDay, int curYear);
+void printCourseAssignments(Node* pHead, char* targetCourse);
 #endif

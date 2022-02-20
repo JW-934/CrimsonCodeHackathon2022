@@ -15,6 +15,39 @@
 
 #include "Assignments.h"
 
+char* promptForCourse(Node* pHead)
+{
+	int found = 0;
+	char targetCourse[20] = "", discard[2] = "";
+	Node* pCur = pHead;
+
+	if (pCur != NULL)
+	{
+		do
+		{
+			printf("\nEnter a course > ");
+			
+			fgets(discard, 2, stdin);
+			fgets(targetCourse, 20, stdin);
+			targetCourse[strlen(targetCourse) - 1] = '\0'; // Gets rid of newline at end from fgets
+
+			while (pCur != NULL && found == 0)
+			{
+				if (strcmp(pCur->assignment.course, targetCourse) == 0)
+				{
+					++found;
+				}
+				pCur = pCur->pNext;
+			}
+			if (found == 0)
+			{
+				printf("\nCourse not found!\n");
+			}
+		} while (found == 0);
+		return targetCourse;
+	}
+}
+
 int promptForOption(int lowerBound, int upperBound)
 {
 	int option = 0;
@@ -80,8 +113,14 @@ Node* makeNode(char* newDate, char* newStatus, char* newType, char* newTopic, ch
 
 void printMenu()
 {
-	printf("******************** Assignment Manager ********************\n*                                                          *\n");
-	printf("*                1. Display all assignments                *\n*           2. Print upcoming week of assignments          *\n*                 3. Print past assignments                *\n*                          4. Exit                         *\n*                                                          *\n");
+	printf("******************** Assignment Manager ********************\n");
+	printf("*                                                          *\n");
+	printf("*                1. Display all assignments                *\n");
+	printf("*           2. Print upcoming week of assignments          *\n");
+	printf("*                 3. Print past assignments                *\n");
+	printf("*        4. Print assignments from a certain course        *\n");
+	printf("*                          5. Exit                         *\n");
+	printf("*                                                          *\n");
 	printf("************************************************************\n");
 }
 
@@ -94,6 +133,7 @@ void scanLine(char* line, char* newDate, char* newStatus, char* newType, char* n
 
 	if (strcmp(tempStatus, "*") == 0)
 	{
+		// Changes empty fields to INCOMPLETE
 		strcpy(newStatus, "INCOMPLETE");
 	}
 	else
@@ -189,5 +229,44 @@ void printUpcomings(Node* pHead, int curMonth, int curDay, int curYear)
 			}
 			pCur = pCur->pNext;
 		}
+		putchar('\n');
+	}
+}
+
+void printPasts(Node* pHead, int curMonth, int curDay, int curYear)
+{
+	Node* pCur = pHead;
+
+	if (pCur != NULL)
+	{
+		while (pCur != NULL)
+		{
+			if (pCur->assignment.dueDate.month < curMonth || (pCur->assignment.dueDate.day < curDay && pCur->assignment.dueDate.month == curMonth) || pCur->assignment.dueDate.year < curYear)
+			{
+				printf("%d/%d/%d %s %s %s %s\n", pCur->assignment.dueDate.month, pCur->assignment.dueDate.day, pCur->assignment.dueDate.year,
+					pCur->assignment.status, pCur->assignment.type, pCur->assignment.topic, pCur->assignment.course);
+			}
+			pCur = pCur->pNext;
+		}
+		putchar('\n');
+	}
+}
+
+void printCourseAssignments(Node* pHead, char* targetCourse)
+{
+	Node* pCur = pHead;
+
+	if (pCur != NULL)
+	{
+		while (pCur != NULL)
+		{
+			if (strcmp(pCur->assignment.course, targetCourse) == 0)
+			{
+				printf("%d/%d/%d %s %s %s %s\n", pCur->assignment.dueDate.month, pCur->assignment.dueDate.day, pCur->assignment.dueDate.year,
+					pCur->assignment.status, pCur->assignment.type, pCur->assignment.topic, pCur->assignment.course);
+			}
+			pCur = pCur->pNext;
+		}
+		putchar('\n');
 	}
 }
