@@ -6,6 +6,9 @@
 * Description: This program takes a .csv of a student's past and upcoming assignments for the semester and allows them
 *			   to view the assignments by date, priority, class, upcoming, and past. The .csv file is intended to be
 *			   stored in Microsoft Onedrive so the program will be kept up to date through their cloud service.
+*
+*			   The overall intent is to allow students to effectively manage their time by showing what would be the
+*			   most beneficial things for them to work on at any given time by analysing priority and due dates.
 */
 
 #ifndef ASSIGNMENTS_H
@@ -31,7 +34,7 @@ typedef struct assignment
 	char status[15];
 	char* type[15];
 	char* topic[50];
-	char* class[15];
+	char* course[15];
 }Assignment;
 
 typedef struct node
@@ -41,11 +44,14 @@ typedef struct node
 }Node;
 
 int promptForOption(int lowerBound, int upperBound);
-int insertFront(Node** pList, char* newDate, char* newStatus, char* newType, char* newTopic, char* newClass);
 
-Node* makeNode(char* newDate, char* newStatus, char* newType, char* newTopic, char* newClass);
+Node* makeNode(char* newDate, char* newStatus, char* newType, char* newTopic, char* newCourse);
 
 void printMenu();
-void scanLine(char* line, char* newDate, char* newStatus, char* newType, char* newTopic, char* newClass);
-void setVarsToDefault(char* line, char* newDate, char* newStatus, char* newType, char* newTopic, char* newClass);
+void scanLine(char* line, char* newDate, char* newStatus, char* newType, char* newTopic, char* newCourse);
+void setVarsToDefault(char* line, char* newDate, char* newStatus, char* newType, char* newTopic, char* newCourse);
+void starsInEmptyFields(char* str, int length);
+void insertFront(Node** pList, char* newDate, char* newStatus, char* newType, char* newTopic, char* newCourse);
+//void printList(Node* pHead);
+void printListRec(Node* pHead);
 #endif
